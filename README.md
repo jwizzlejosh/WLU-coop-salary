@@ -1,5 +1,5 @@
 # WLU-coop-salary
-Anonymous Pay Transparency for Co-op Students. All results are self-submitted and are not representative of any real organization or institution. 
+Anonymous Pay Transparency for Co-op Students. All results are self-submitted and are not representative of any real organization or institution. Employees in Ontario have the right to discuss their salaries based on both the Pay Transparency Act and the Employment Standards Act.
 > Forked from @Nathan903's [UofT Co-op Salary](https://github.com/Nathan903/UofT-coop-salary)
 
 ## How to Access
