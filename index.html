@@ -8,13 +8,17 @@
         body,
         html {
             height: 100%;
-            margin: 0px;
+            margin: 0;
+            font-family: 'Helvetica', 'Arial', sans-serif;
         }
 
         .iframe-container {
             position: relative;
-            width: 100%;
-            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+            min-height: 70%;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         iframe {
@@ -26,38 +30,54 @@
         }
 
         nav {
-            background-color: #333;
+            background-color: #4b0082;
             overflow: hidden;
+            clear: both; /* Clear floats */
+            text-align: left; /* Adjusted to left-justify all items */
         }
 
         nav a {
-            float: left;
-            display: block;
+            display: inline-block;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #ddd;
+            background-color: #6a5acd;
             color: black;
         }
 
-        blockquote {
-            color: #777;
-            font-style: italic;
-            border-left: 2px solid #777;
-            /* Left border color and width */
-            padding: 2px 0px 2px 0.4em;
-            /* Add some padding for spacing */
-            margin: 0.4em 0.4em 0em 0em;
-
+        footer {
+            background-color: #4b0082;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
 
-        footer {
-            padding: 0.4em 0.4em 0em 0.4em;
+        footer a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -65,17 +85,24 @@
 <body>
 
     <nav>
-        <strong> <a href="#">About </a> | <a href="https://github.com/jwizzlejosh/WLU-coop-salary"> Request
-                Removal </a> | <a href="https://docs.google.com/spreadsheets/d/1kMBu1_TONgzZ0Ysz3d2OYiu1O8kDftZxT3INxrz8hII/edit#gid=0"
-                target="_blank">UW Coop Salary Spreadsheet</a> | <a href="https://uoftcoopsalary.pages.dev/" target="_blank">UofT Coop Salary
-                Spreadsheet</a></strong>
+        <a>WLU Coop Salary Spreadsheet</a> | <a href="https://forms.gle/bWbaxPSnJycaPsrY8"> Contribute Salary </a> | <a
+            href="https://docs.google.com/spreadsheets/d/1kMBu1_TONgzZ0Ysz3d2OYiu1O8kDftZxT3INxrz8hII/edit#gid=0"
+            target="_blank">UW Coop Salary Spreadsheet</a> | <a
+            href="https://uoftcoopsalary.pages.dev/" target="_blank">UofT Coop Salary
+            Spreadsheet</a>
     </nav>
 
     <div class="iframe-container">
+        <div class="title">WLU Co-op Salary Spreadsheet</div>
+        <div class="description">Anonymous Pay Transparency for Co-op Students. All results are self-submitted and are not representative of any real organization or institution.</div>
         <iframe
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4JldC8Ms7-jr1WpM-UMnFgofeH6EPPJqOvqrwoDHeMqGAtV5Q_bp91uS544rCQIU4IINSFnBKQrwk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false">
         </iframe>
     </div>
+
+    <footer>
+        <p>Contribute to the project on <a href="https://github.com/jwizzlejosh/WLU-coop-salary" target="_blank"><b>GitHub</b></a></p>
+    </footer>
 
 </body>
 
