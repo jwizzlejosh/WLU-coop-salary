@@ -34,56 +34,13 @@
         }
 
     </style>
+    <strong>  <a href="#">About </a> | <a href="https://github.com/jwizzlejosh/WLU-coop-salary"> Request Removal </a> | <a href="https://docs.google.com/spreadsheets/d/1kMBu1_TONgzZ0Ysz3d2OYiu1O8kDftZxT3INxrz8hII/edit#gid=0" target="_blank">UW Coop Salary Spreadsheet</a> | <a href="https://uoftcoopsalary.pages.dev/" target="_blank">UofT Coop Salary Spreadsheet</a></strong>
+	<blockquote id="quote">For the love of money is a root of all kinds of evils. </blockquote>
 </head>
 <body>
 <div class="iframe-container">
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4JldC8Ms7-jr1WpM-UMnFgofeH6EPPJqOvqrwoDHeMqGAtV5Q_bp91uS544rCQIU4IINSFnBKQrwk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </div>
-<footer>
-    <strong>  <a href="#">About </a> | <a href="https://github.com/jwizzlejosh/WLU-coop-salary"> Request Removal </a> | <a href="https://docs.google.com/spreadsheets/d/1kMBu1_TONgzZ0Ysz3d2OYiu1O8kDftZxT3INxrz8hII/edit#gid=0" target="_blank">UW Coop Salary Spreadsheet</a> | <a href="https://uoftcoopsalary.pages.dev/" target="_blank">UofT Coop Salary Spreadsheet</a></strong>
-	<blockquote id="quote">For the love of money is a root of all kinds of evils. </blockquote>
-
-<footer>
-
-<script>
-    // Array of quotes with weights
-    const quotes = [
-    	{ text: "But woe to you who are rich, for you have received your consolation", weight:2},
-    	{ text: "Whoever trusts in his riches will fall,but the righteous will flourish like a green leaf.", weight:5},
-        { text: "For the love of money is a root of all kinds of evils. It is through this craving that some have wandered away from the faith and pierced themselves with many pangs.", weight: 7 },
-        { text: "He who loves money will not be satisfied with money, nor he who loves wealth with his income; this also is vanity.", weight:120 },
-        { text: "And he said to them, 'Take care, and be on your guard against all covetousness, for one's life does not consist in the abundance of his possessions.'", weight: 3 },
-        { text: "A good name is to be chosen rather than great riches, and favor is better than silver or gold.", weight: 3 },
-        { text: "Keep your life free from love of money, and be content with what you have, for he has said, 'I will never leave you nor forsake you.'", weight: 1},
-        { text: "For where your treasure is, there your heart will be also.", weight: 2 },
-        { text: "Better is the little that the righteous has than the abundance of many wicked.", weight: 3},
-        { text: "Again I tell you, it is easier for a camel to go through the eye of a needle than for a rich person to enter the kingdom of God.", weight: 2},
-        { text: "Come now, you rich, weep and howl for the miseries that are coming upon you.", weight:2},
-        { text: "When your eyes light on it, it is gone, for suddenly it sprouts wings, flying like an eagle toward heaven.", weight: 1}
-    ];
-
-    // Function to get a random quote based on weights
-    function getRandomQuote() {
-        // Calculate the total weight of all quotes
-        const totalWeight = quotes.reduce((sum, quote) => sum + quote.weight, 0);
-        console.log(totalWeight);	
-        // Generate a random number between 0 and the total weight
-        const randomNumber = Math.random() * totalWeight;
-        
-        // Find the quote that corresponds to the random number
-        let cumulativeWeight = 0;
-        for (const quote of quotes) {
-            cumulativeWeight += quote.weight;
-            if (randomNumber <= cumulativeWeight) {
-                return quote.text;
-            }
-        }
-    }
-
-    // Display a random weighted quote on page load
-    const quoteElement = document.getElementById("quote");
-    quoteElement.textContent = getRandomQuote();
-</script>
 
 </body>
 </html>
